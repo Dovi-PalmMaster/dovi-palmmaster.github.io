@@ -13,7 +13,8 @@
     }
 
     main {
-      max-width: 72ch;
+      box-sizing: border-box;
+      width: 60%;
       margin: 0 auto;
       padding: 3rem 1.25rem;
       overflow-wrap: break-word;
@@ -50,12 +51,21 @@
     .updated {
       color: #555555;
     }
+
+    @media (max-width: 900px) {
+      main {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
   <main>
     <h1>PalmMaster Privacy Policy</h1>
-    <p class="updated"><strong>Last updated</strong> <time datetime="2026-11-23">November 23, 2026</time></p>
+    <p class="updated">
+      <strong>Last updated</strong>
+      <time datetime="2026-11-23">November 23, 2026</time>
+    </p>
 
     <section>
       <h2>1. Scope of this policy</h2>
